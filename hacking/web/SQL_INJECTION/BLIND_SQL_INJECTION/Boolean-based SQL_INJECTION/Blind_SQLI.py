@@ -2,9 +2,9 @@
 import requests
 import string
 # example URL
-url = 'http://example.com/login'
+url = 'http://host3.dreamhack.games:19549/login'
 params = {
-    'uid': '',
+    'userid': '',
     'upw': ''
 }
 # abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~
