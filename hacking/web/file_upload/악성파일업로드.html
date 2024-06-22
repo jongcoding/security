@@ -1,0 +1,13 @@
+<?php
+if(!empty($_FILES['file'])){
+  $filename = "user_uploaded_file_".time();
+  $ext = pathinfo($_FILES['file']['name'], PATHINFO_EXTENSION);
+  $path = "./uploads/" . $filename . "." . $ext;
+  
+  if(move_uploaded_file($_FILES['file']['tmp_name'], $path)) {
+    return true; // upload success
+  } else {
+    return false; // upload fail
+  }
+}
+?>

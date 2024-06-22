@@ -9,7 +9,7 @@ class Solver:
 
     # initialization
     def __init__(self, port: str) -> None:
-        self._chall_url = f"http://attacksite:{port}"
+        self._chall_url = f"http://host3.dreamhack.games:{port}"
         self._login_url = urljoin(self._chall_url, "login")
 
     # base HTTP methods
@@ -60,6 +60,6 @@ class Solver:
 
 
 if __name__ == "__main__":
-    port = 123456709
+    port = 21597
     solver = Solver(port)
     solver.solve()
