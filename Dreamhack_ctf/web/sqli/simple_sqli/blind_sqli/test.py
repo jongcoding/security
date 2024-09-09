@@ -1,5 +1,5 @@
 import requests
-url="http://host3.dreamhack.games:12957/login"
+url="http://host3.dreamhack.games:12703/login"
 len_passwrod=0
 val=0
 password=""

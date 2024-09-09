@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 import requests
 import sys
 from urllib.parse import urljoin
@@ -8,8 +7,8 @@ class Solver:
     """Solver for simple_SQLi challenge"""
 
     # initialization
-    def __init__(self, port: str) -> None:
-        self._chall_url = f"http://host3.dreamhack.games:{port}"
+    def __init__(self, url: str) -> None:
+        self._chall_url = url
         self._login_url = urljoin(self._chall_url, "login")
 
     # base HTTP methods
@@ -60,6 +59,6 @@ class Solver:
 
 
 if __name__ == "__main__":
-    port = 16771
-    solver = Solver(port)
+    url = "http://host3.dreamhack.games:12703"
+    solver = Solver(url)
     solver.solve()
