@@ -2,7 +2,7 @@
 import requests
 import string
 # example URL
-url = 'http://host3.dreamhack.games:19549/login'
+url = 'http://host3.dreamhack.games:15661/login'
 params = {
     'userid': '',
     'upw': ''
